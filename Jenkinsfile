@@ -2,18 +2,14 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Do Nothing') {
             steps {
-         echo 'Building....'          
-         sh '''#!/bin/bash
-                 mvn package
-         '''
-                
+                echo 'Doing Nothing..'
             }
         }
-        stage('Test') {
+        stage('Test Nothing') {
             steps {
-                echo 'Testing..'
+                echo 'Testing Nothing..'
             }
         }
         stage('Deploy') {
